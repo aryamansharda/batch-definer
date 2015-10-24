@@ -53,22 +53,27 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>Define multiple words quickly!</h1>
+                <h1 style="color:#FFF">Define multiple words quickly!</h1>
                 <hr>
 
                 <div ng-controller="definerController">
-
-                  <h6>List each word you want us to define on its own line!</h6>
-
-
+                  <h6 style="color:#FFF">List each word you want us to define on its own line!</h6>
+                  </br>
                   <form ng-submit="defineWords()">
-                    <input type="text" placeholder="List words..." ng-model="definitionWord"></input>
-                    <button type="submit"> Add </button>
+
+                    <textarea name="myTextBox" ng-model="definitionWord" input type="text" style="font-family:Open Sans" style="color:#FFF"  cols="50" rows="14">
+
+                    </textarea>
+
+                    </br>
+                    </br>
+
+                    <button type="submit" class="btn btn-primary btn-xl page-scroll">DEFINE ALL WORDS!</a>
                   </form>
 
                 </div>
 
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+
             </div>
         </div>
     </header>
